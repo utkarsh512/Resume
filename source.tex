@@ -78,7 +78,7 @@
 %------------Interests----------------
 \section{Interests}
   \resumeSubHeadingListStart
-      {{Deep Learning} · {Natural Language Processing} · {Algorithm Design} · {Graph Theory} · {Analog Circuit Design}}
+      {{Deep Learning} · Machine Learning · {Information Retrieval} · {Algorithm Design} · {Graph Theory}}
   \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
@@ -114,18 +114,14 @@
     \resumeSubheading
       {Functional Connectivity MRI Classification of Autism Spectrum Disorder \href{https://github.com/utkarsh512/fMRI-classification-of-ASD}{\faGithub}}{\textit{IIT Kharagpur}}
       {Guide: \href{https://cse.iitkgp.ac.in/~dsamanta/}{Prof. Debasis Samanta}}{Aug 2020 - Present}
-      \resumeItemListStart
-        \resumeItem{Research Focus}
-          {Application of machine learning algorithms to classify autism spectrum disorder (ASD) patients and typically developing (TD) participants.}
-        \resumeItem{Data Collection}
-          {Using \textbf{resting-state functional MRI} (rs-fMRI) data from multi-site data repository \textbf{ABIDE} (Autism Brain Imaging Data Exchange).}
-        \resumeItem{Functional Brain Networks}
-          {Using system-level graph analysis for evaluating brain networks  (default-mode, fronto-parietal, somatomotor, visual and cerebellar networks) and functional connectivity analysis for extracting features.}
-        \resumeItem{Model}
-          {Identifying important features from machine learning algorithms and implementing and training a deep neural network for the classification problem.}
-        \resumeItem{Testing}
-          {Testing the deep neural network on examples of different age groups and different brain maps (CC400, CC200, AAL, HOA, TT, EZ, Dosenbach).}
-      \resumeItemListEnd
+      \begin{itemize}
+          \itemsep-0.15em
+          \item {Worked on the ABIDE dataset to extract and process fMRI data for various brain atlases.}
+          \item {Used resting state functional connectivity analysis to build the connectivity matrices.}
+          \item {Implemented various ML classification algorithms to classify subjects as autism (ASD) patients and typically developing (TD) participants.}
+          \item {Used SVM and MLP classifier to achieve test accuracies of 0.67 and 0.62 respectively on CC200 atlas.}
+          \item {Currently using SVM-RFE algorithm to extract top 1000 features from the connectivity matrix and training a deep neural network on the extracted features.}
+      \end{itemize}
 
   \resumeSubHeadingListEnd
 
@@ -135,13 +131,13 @@
  \section{Relevant Coursework}
   \resumeSubHeadingListStart
     \resumeSubItem{Computer Science}
-      {Algorithms (+ lab); Programming and Data Structures (+ lab)}
+      {\\Scalable Data Mining*, Information Retrieval*, Algorithms (+ lab); Programming and Data Structures (+ lab)}
     \resumeSubItem{Deep Learning}
-      {Natural Language Processing*; Convolutional Neural Network*; \href{https://www.coursera.org/account/accomplishments/certificate/9UGVQFJCCS38}{Hyper-parameter Tuning, Regularization \& Optimization Techniques}; \href{https://www.coursera.org/account/accomplishments/certificate/9HS82Y4DP4DV}{Neural Networks and Deep Learning}}
+      {\\Natural Language Processing*; Convolutional Neural Network*; \href{https://www.coursera.org/account/accomplishments/certificate/9UGVQFJCCS38}{Hyper-parameter Tuning, Regularization \& Optimization Techniques}; \href{https://www.coursera.org/account/accomplishments/certificate/9HS82Y4DP4DV}{Neural Networks and Deep Learning}}
     \resumeSubItem{Electronics and Communication Engineering}
-      {Digital Electronics (+ lab)*; Analog Communication (+ lab)*; RF \& Microwave (+ lab)*; Digital Speech Processing; Analog Electronics (+ lab); Control Theory*; Signals \& Systems; Semiconductor Devices (+ lab)}
+      {\\Digital Electronics (+ lab)*; Analog Communication (+ lab)*; RF \& Microwave (+ lab)*; Digital Speech Processing; Analog Electronics (+ lab); Control Theory*; Signals \& Systems; Semiconductor Devices (+ lab)}
     \resumeSubItem{Mathematics}
-      {Graph Theory; Probability and Stochastic Processes; Matrix Algebra}
+      {\\Graph Theory; Probability and Stochastic Processes; Matrix Algebra}
     \rightline{* \textit{denotes ongoing courses}}
   \resumeSubHeadingListEnd
 
@@ -158,13 +154,11 @@
 \section{Technical Skills}
   \resumeSubHeadingListStart
     \resumeSubItem{Programming Languages}
-      {Python, C/C++, Octave, MySQL}
+      {\\Python, C/C++, Octave, MySQL}
     \resumeSubItem{Libraries / Frameworks}
-      {TensorFlow, Keras, sklearn, Pandas, NumPy, C++ STL}
+      {\\TensorFlow, Keras, sklearn, Pandas, NumPy, C++ STL}
     \resumeSubItem{Softwares / Platforms / OS}
-      {Google Cloud, MATLAB, LTSpice, Jupyter, Git, \LaTeX, Windows, Ubuntu}
-    \resumeSubItem{Competitive Programming}
-      {\href{https://codeforces.com/profile/QMark}{CodeForces}}
+      {\\Google Cloud, MATLAB, LTSpice, Jupyter, Git, \LaTeX, Windows, Ubuntu}
   \resumeSubHeadingListEnd
   
 \end{document}
