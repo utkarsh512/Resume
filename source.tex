@@ -56,12 +56,26 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumePoints}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & #2 
+    \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\chrono}[2]{
+\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & \textit{#2}
+    \end{tabular*}
+}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -74,11 +88,6 @@
   {\textbf{{\huge{Utkarsh Patel}}}} & { {\href{https://utkarsh.me}{\textit{https://utkarsh.me/}}}}\\ {C-231, Patel Hall of Residence, IIT Kharagpur, WB - 721 302}& { \href{mailto:utkarshpatel@iitkgp.ac.in}{utkarshpatel@iitkgp.ac.in}} \\
 \end{tabular*}
 
-%------------Interests----------------
-\section{Interests}
-  \resumeSubHeadingListStart
-      {\textit{{Natural Language Processing} · {Machine Learning} · {Algorithms} · {Graph Theory}}}
-  \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -86,7 +95,7 @@
 
     \resumeSubheading
       {Indian Institute of Technology (IIT), Kharagpur}{\textit{GPA} | 9.47 / 10.0}
-      {Candidate for Bachelor and Master of Technology (Dual Degree)}{Jul 2018 - Present}
+      {Candidate for Bachelor and Master of Technology (Dual Degree)}{May 2023 (Expected)}
       \resumeItemListStart
         \resumeItem{Major}
           {Electronics and Electrical Communication Engineering}
@@ -107,42 +116,52 @@
 
   \resumeSubHeadingListEnd
   
-\section{Projects}
+\section{Key Projects}
   \resumeSubHeadingListStart
   
     \resumeSubheading
-      {Targeted Aspect-based Sentiment Analysis \href{https://github.com/utkarsh512/ABSA-Bert}{\faGithub}}{\textit{Prof. Animesh Mukherjee}}
-      {Natural Language Processing}{Winter '20}
+      {Logical Fallacy Detection to Defend Against Online Hate Speech on Reddit}{\textit{Feb 2021 | Present}}
+      {Guide | Prof. Mainack Mondal and Prof. Animesh Mukherjee}{Natural Language Processing}
       \begin{itemize}
           \itemsep-0.15em
-          \item {Performed aspect-based sentiment analysis by transforming the task into sentence-pair classification task via constructing auxiliary sentences from target-aspect pairs.}
-          \item {Used pre-trained BERT model and fine-tuned it on SentiHood data set.}
-          \item {Achieved aspect F1-score of 0.90 and sentiment AUC of 0.986.}
+          \item {Performed aspect-based sentiment analysis by transforming the task into sentence-pair classification task via constructing auxiliary sentences from target-aspect pairs}
+          \item {Used pre-trained BERT model and fine-tuned it on SentiHood data set}
+          \item {Achieved aspect F1-score of 0.90 and sentiment AUC of 0.986}
+      \end{itemize}
+  
+    \resumeSubheading
+      {Targeted Aspect-based Sentiment Analysis \href{https://github.com/utkarsh512/ABSA-Bert}{\faGithub}}{\textit{Dec 2020 | Jan 2021}}
+      {Guide | Prof. Animesh Mukherjee}{Natural Language Processing}
+      \begin{itemize}
+          \itemsep-0.15em
+          \item {Performed aspect-based sentiment analysis by transforming the task into sentence-pair classification task via constructing auxiliary sentences from target-aspect pairs}
+          \item {Used pre-trained BERT model and fine-tuned it on SentiHood data set}
+          \item {Achieved aspect F1-score of 0.90 and sentiment AUC of 0.986}
       \end{itemize}
     
     \resumeSubheading
-      {Identification of Autism Spectrum Disorder \href{https://github.com/utkarsh512/Autism}{\faGithub}}{\textit{{Prof. Debasis Samanta}}}
-      {Machine Learning}{Autumn '20}
+      {Identification of Autism Spectrum Disorder \href{https://github.com/utkarsh512/Autism}{\faGithub}}{\textit{{Aug 2020 | Dec 2020}}}
+      {Guide | Prof. Debasis Samanta}{Machine Learning}
       \begin{itemize}
           \itemsep-0.15em
-          \item {Worked on the ABIDE data set to extract and process resting state functional MRI data.}
-          \item {Used correlation-based approach to determine functional connectivity between ROIs.}
-          \item {Implemented various machine learning classification algorithms to classify subjects as autism (ASD) patients and typically developing (TD) participants. Achieved test accuracy of 0.68 and 0.65 using SVM and KNN classifier respectively.}
-      \end{itemize}
-
-    \resumeSubheading
-      {Machine Learning \href{https://github.com/utkarsh512/CS60050-Machine-Learning}{\faGithub}}{\textit{Prof. Jayanta Mukhopadhyay}}
-      {CS60050 | Machine Learning Term Project}{Autumn '20}
-      \begin{itemize}
-          \itemsep-0.15em
-          \item {Implemented Regression Decision Trees for predicting percentage increase in Covid-19 cases worldwide.}
-          \item {Implemented Naive Bayes classifier for estimating patients' stay in a hospital.}
-          \item {Implemented SVM and MLP classifier for predicting biodegradability of chemicals from their molecular description.}
+          \item {Worked on the ABIDE data set to extract and process resting state functional MRI data}
+          \item {Used correlation-based approach to determine functional connectivity between ROIs}
+          \item {Implemented various machine learning classification algorithms to classify subjects as autism (ASD) patients and typically developing (TD) participants. Achieved test accuracy of 0.68 and 0.65 using SVM and KNN classifier respectively}
       \end{itemize}
 
   \resumeSubHeadingListEnd
-  
-\section{Key Skills}
+
+
+\section{Achievements}
+  \begin{itemize}[leftmargin=*]
+      \itemsep-0.15em
+      \chrono {Holding \textbf{Department Rank 1} among the dual degree students of E\&ECE department}{Feb 2021}
+      \chrono {\textbf{Peak Rating} of \textbf{2157} on CodeForces and \textbf{2208} on CodeChef}{Feb 2021}
+      \chrono {\textbf{Changed Department} to E\&ECE by acquiring \textbf{9.69 CGPA} in the first year}{Jul 2019}
+    \end{itemize}
+
+ 
+\section{Technical Skills}
   \resumeSubHeadingListStart
     \resumeSubItem{Programming Languages}
       {C++, Python, Java, Scala}
@@ -156,22 +175,19 @@
   
  \section{Relevant Coursework}
   \resumeSubHeadingListStart
-    \resumeSubItem{Computer Science}
-      {\\Machine Learning; Algorithms (+ lab); Programming and Data Structures (+ lab)}
-    \resumeSubItem{Electronics and Communication Engineering}
-      {\\Digital Electronics (+ lab); Analog Communication (+ lab); RF \& Microwave (+ lab); Digital Speech Processing; Analog Electronics (+ lab); Control Theory; Signals \& Systems; Semiconductor Devices (+ lab)}
-    \resumeSubItem{Mathematics}
-      {\\Probability and Stochastic Processes; Matrix Algebra}
+    \resumeSubItem{Completed with Laboratory Component}
+      {Algorithms, Programming and Data Structures}
+    \resumeSubItem{Completed}
+      {Machine Learning, Probability and Stochastic Processes, Matrix Algebra}
     \resumeSubItem{Online Courses}
-      {\\Deep Learning Specialization; Graph Theory}
-    %\rightline{* \textit{denotes ongoing courses}}
+      {CS 224n: NLP with Machine Learning, Deep Learning Specialization}
+  \resumeSubHeadingListEnd
+  
+\section{Other Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Machine Learning \href{https://github.com/utkarsh512/CS60050-Machine-Learning}{\faGithub} }
+      {Implemented Regression Decision Trees, Naive Bayes classifier, SVM and MLP classifier}
   \resumeSubHeadingListEnd
 
-\section{Scholastic Achievements}
-  \resumeSubHeadingListStart
-      \itemsep-0.5em
-      \item{2020: Holding \textbf{Department rank 1} among 53 dual degree students at the end of 4\textsuperscript{th} semester.}
-      \item{2017: Secured \textbf{2\textsuperscript{nd} position} in the district in All India Senior School Certificate Examination.}
-      
-  \resumeSubHeadingListEnd
+
 \end{document}
